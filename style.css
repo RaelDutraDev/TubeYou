@@ -1,0 +1,403 @@
+body {
+
+    background-color: #F7F0F5;
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================
+   CABEÇALHO
+   ========================= */
+
+.head {
+
+    width: 340px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 0 auto;
+
+    margin-top: 5cm;
+
+    box-shadow: 2px 2px 20px #7b615b;
+
+    background-color: #8F857D;
+
+    border-radius: 10px;
+}
+
+
+.titulo {
+
+    color: #F7F0F5;
+
+    transform: scale(2);
+}
+
+
+/* =========================
+   ÁREA CENTRAL
+   ========================= */
+
+.meio {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex: 1;
+
+    flex-direction: column;
+}
+
+
+.area-principal {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-direction: column;
+}
+
+
+/* =========================
+   INPUT
+   ========================= */
+
+.meio input {
+
+    width: 500px;
+
+    height: 30px;
+
+    padding: 0 10px;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 20px #7b615b;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+.meio input:hover {
+
+    transform: scale(1.01);
+}
+
+
+/* =========================
+   MENSAGEM DE ERRO
+   ========================= */
+
+#mensagemErro {
+
+    color: red;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    margin: 10px 0;
+
+    opacity: 0;
+
+    transform: translateY(-5px);
+
+    transition: 0.2s;
+}
+
+
+#mensagemErro.visivel {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================
+   OPÇÕES ÁUDIO / VÍDEO
+   ========================= */
+
+.opcoes {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 80px;
+
+    margin-top: 15px;
+
+    margin-bottom: 15px;
+
+    opacity: 0;
+
+    transform: translateY(15px);
+
+    pointer-events: none;
+
+    transition: 0.4s;
+}
+
+
+.opcoes.visivel {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+}
+
+
+.botao_opcao {
+
+    width: 125px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #8F857D;
+
+    color: #F7F0F5;
+
+    font-size: 15px;
+
+    box-shadow: 2px 2px 10px #7b615b;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.botao_opcao:hover {
+
+    transform: translateY(2px);
+}
+
+
+.botao_opcao:active {
+
+    transform: scale(0.9);
+}
+
+
+/* =========================
+   ENVIAR
+   ========================= */
+
+.botao_enviar {
+
+    font-size: 15px;
+
+    font-family:
+        'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif;
+
+    color: aliceblue;
+
+    margin-top: 5px;
+
+    height: 1cm;
+
+    width: 3cm;
+
+    border-radius: 10px;
+
+    background-color: #8F857D;
+
+    border: none;
+
+    box-shadow: 2px 2px 10px #7b615b;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.5s,
+        transform 0.5s;
+}
+
+
+/* aparência quando link inválido */
+
+.botao_enviar.inativo {
+
+    opacity: 0.55;
+}
+
+
+/* ENVIAR descendo e desaparecendo */
+
+.botao_enviar.saindo {
+
+    opacity: 0;
+
+    transform: translateY(60px);
+
+    pointer-events: none;
+}
+
+
+.botao_enviar:hover {
+
+    transform: translateY(2px);
+}
+
+
+.botao_enviar:active {
+
+    transform: scale(0.9);
+}
+
+
+/* =========================
+   FORMATOS
+   ========================= */
+
+.opcoes_formato {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    max-width: 500px;
+
+    margin-top: 20px;
+
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    pointer-events: none;
+
+    transition: 0.4s;
+}
+
+
+.opcoes_formato.visivel {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+}
+
+
+.botao_formato {
+
+    min-width: 90px;
+
+    height: 38px;
+
+    padding: 0 15px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background-color: #8F857D;
+
+    color: #F7F0F5;
+
+    box-shadow: 2px 2px 10px #7b615b;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.botao_formato:hover {
+
+    transform: translateY(2px);
+}
+
+
+.botao_formato:active {
+
+    transform: scale(0.9);
+}
+
+
+/* =========================
+   VOLTAR
+   ========================= */
+
+.botao_voltar {
+
+    margin-top: 2cm;
+
+    height: 1cm;
+
+    width: 3cm;
+
+    border-radius: 10px;
+
+    background-color: #8F857D;
+
+    color: #F7F0F5;
+
+    border: none;
+
+    box-shadow: 2px 2px 10px #7b615b;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.5s,
+        transform 0.5s;
+}
+
+
+.botao_voltar.visivel {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+}
