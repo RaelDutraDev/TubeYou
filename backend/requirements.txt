@@ -1,3 +1,9 @@
-Flask
-flask-cors
-yt-dlp[default]
+# Versões verificadas com Python 3.14. FFmpeg, FFprobe e Deno são externos.
+# Atualize yt-dlp e yt-dlp-ejs em conjunto e execute os testes após atualizar.
+Flask==3.1.3
+flask-cors==6.0.5
+Werkzeug==3.1.9
+yt-dlp[default]==2026.8.19
+yt-dlp-ejs==0.8.0
+itsdangerous==2.2.0
+waitress==3.0.2

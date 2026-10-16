@@ -401,3 +401,12 @@ body {
 
     pointer-events: auto;
 }
+
+button:disabled {
+
+    opacity: 0.55;
+
+    cursor: wait;
+}
+
+.salvar_arquivo { display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; text-decoration: none; font-family: Arial, sans-serif; }
